@@ -30,9 +30,14 @@ dependencies {
 	// R2dbc driver
 	implementation("com.github.jasync-sql:jasync-r2dbc-mysql:2.1.23")
 
-	// R2DBC migrate
-	// https://mvnrepository.com/artifact/name.nkonev.r2dbc-migrate/r2dbc-migrate-spring-boot-starter
-	implementation("name.nkonev.r2dbc-migrate:r2dbc-migrate-spring-boot-starter:2.8.0")
+	// flyway spring boot
+	implementation("org.flywaydb:flyway-core:8.2.2")
+	implementation("org.flywaydb:flyway-spring-boot-starter:8.2.2")
+	//flyway r2dbc
+	implementation("org.flywaydb:flyway-r2dbc:8.2.2")
+
+	// memory db
+	implementation("com.h2database:h2:1.4.200")
 
 
 	// Kotlin
